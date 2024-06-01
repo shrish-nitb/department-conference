@@ -1957,7 +1957,7 @@ ol {
 
 .banner__content .countdown__item {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgb(255 255 255 / 20%);
   -webkit-backdrop-filter: blur(10px);
   -moz-backdrop-filter: blur(10px);
   -ms-backdrop-filter: blur(10px);
