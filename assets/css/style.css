@@ -1448,6 +1448,10 @@ ol {
     width: 50% !important;
     border-radius: 10px;
   }
+  swiper-container {
+    width: 100%;
+    height: min-content !important;
+  }
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
