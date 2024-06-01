@@ -1444,6 +1444,10 @@ ol {
   #topbtnreg{
     display: none;
   }
+  .team__item-thumb > img{
+    width: 50% !important;
+    border-radius: 10px;
+  }
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
@@ -4169,3 +4173,14 @@ ol {
 .viewspeaker{
   line-height: 40px !important;
 }
+
+.team__item-thumb{
+  display: flex;
+  justify-content: center;
+}
+.team__item-thumb > img{
+  width: 85% !important;
+  border-radius: 10px;
+}
+
+
