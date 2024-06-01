@@ -20,6 +20,17 @@
 
     <!-- main css for template -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/gallery.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+
+
 </head>
 
 <body>
@@ -36,48 +47,54 @@
     <header class="header-section">
         <div class="header-bottom">
             <div class="container">
-                <div class="header-wrapper">
+                <div class="header-wrapper" style="flex-wrap: nowrap;">
                     <div class="logo">
                         <a href="index.html">
                             <img src="assets/images/logo/logo.png" alt="logo" style="
-                            width: 100px;
+                            width: 80px;
                         ">
                         </a>
                     </div>
-                    <div class="menu-area">
+                    <div class="header-wrapper" style="width: 100%;display: flex;justify-content: center;">
                         <ul class="menu">
                             <li>
                                 <a href="#home">Home</a>
-                                <ul class="submenu">
-                                    <li><a href="index.html">Home Multi</a></li>
-                                    <li><a href="index-single.html">Home Single</a></li>
-                                </ul>
-                            </li>
 
-                            <li>
-                                <a href="#about">About</a>
-                                <ul class="submenu">
-                                    <li><a href="about.html">Gallery</a></li>
-                                    <li><a href="speaker.html">Speakers</a></li>
-                                    <li><a href="schedule.html">Event Schedule</a></li>
-                                </ul>
                             </li>
-
-                            <li>
+                            <!-- <li>
                                 <a href="#faq">Pages</a>
                                 <ul class="submenu">
                                     <li><a href="schedule.html">Call For Papers</a></li>
                                     <li><a href="pricing.html">Pricing</a></li>
                                     <li><a href="faq.html">FAQ</a></li>
                                 </ul>
+                            </li> -->
+                            <li>
+                                <a href="contact.html">About</a>
                             </li>
                             <li>
-                                <a href="contact.html">Contact</a>
+                                <a href="contact.html">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Fees</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Speakers</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Sponsor</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Bhopal</a>
+                            </li>
+                           
+                            <li>
+                                <a href="contact.html">FAQ</a>
                             </li>
                         </ul>
-                        <div class="header-btn">
+                        <div class="header-btn" id="topbtnreg">
                             <a href="#" class="default-btn move-right">
-                                <span>Enroll Now <i class="fa-solid fa-arrow-right"></i></span>
+                                <span>Register <i class="fa-solid fa-arrow-right"></i></span>
                             </a>
                         </div>
 
@@ -87,6 +104,22 @@
                             <span></span>
                             <span></span>
                         </div>
+                        <div id="menudiv" style="
+                        color: #19183e;
+                        font-weight: bold;
+                        letter-spacing: 2px;
+                        margin-left: -4px;
+                    ">
+                            MENU
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <a href="https://manit.ac.in">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/4/4f/Maulana_Azad_National_Institute_of_Technology_Logo.png"
+                                alt="logo" style="
+                            width: 80px;
+                        ">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -100,23 +133,26 @@
 
 
     <!-- ================> Banner section start here <================== -->
-    <section id="home" class="banner banner--overlay" style="background-image: url(https://scontent.fdel29-1.fna.fbcdn.net/v/t39.30808-6/305478115_443532577796643_4006680889217093095_n.jpg?stp=dst-jpg_p960x960&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=73f83go6fUQAb7fBbDF&_nc_ht=scontent.fdel29-1.fna&oh=00_AfA_1KuVh05OTFYm8P0pDKqiqdn3vj26Vd0blgO7r_9IaQ&oe=662667DE);background-size: cover;background-position: center bottom;background-attachment: fixed;">
+    <section id="home" class="banner banner--overlay"
+        style="background-image: url(https://res.cloudinary.com/djjbjnrgl/image/upload/fl_preserve_transparency/v1716810325/DSC_0064_ql4i7g.jpg?_s=public-apps);background-size: cover;background-position: center bottom;background-attachment: fixed;">
         <div class="container">
             <div class="banner__wrapper">
                 <div class="banner__content text-center" data-aos="zoom-in" data-aos-duration="900">
-
-                    <h2 class="white" style="text-transform: uppercase;" data-aos="zoom-in-up"
-                        data-aos-duration="1500">International Conference on
+                    <h2 class="white"
+                        style="text-transform: uppercase;color: #19183e;font-family: 'Oswald', sans-serif;"
+                        data-aos="zoom-in-up" data-aos-duration="1500">
+                        International Conference on
                         Advanced Materials and Technologies
 
                     </h2>
                     <div data-aos="zoom-in-down" data-aos-duration="1500">
-                        <h3 class="white">September 27 – 29, 2024</h3>
-                        <h4 class="white">Department of MME<br>
+                        <h6 style="font-family: 'Montserrat', sans-serif;">September 27 – 29, 2024</h6>
+                        <h6 class="white" style="color: #19183e; font-family: 'Montserrat', sans-serif;">Department of
+                            Materials and Metallurgical Engineering<br>
                             Maulana Azad
                             National Institute of Technology
-                            Bhopal, M.P., India
-                        </h4>
+                            Bhopal
+                        </h6>
                     </div>
                     <div class="banner__bottom">
                         <ul class="countdown justify-content-center" data-date="September 09, 2024 00:00:00"
@@ -140,7 +176,7 @@
                         </ul>
                     </div>
 
-                    <a href="#" class="default-btn move-right"><span>Register <i
+                    <a href="#" class="default-btn move-right"><span>Learn More <i
                                 class="fa-solid fa-arrow-right"></i></span> </a>
                 </div>
             </div>
@@ -152,7 +188,7 @@
 
 
     <!-- ================> Register section start here <================== -->
-    <div class="register register--uplifted" data-aos="fade-up" data-aos-duration="900">
+    <!-- <div class="register register--uplifted" data-aos="fade-up" data-aos-duration="900">
         <div class="container">
             <div class="register__wrapper">
                 <form action="#" class="register__form">
@@ -174,7 +210,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- ================> Register section end here <================== -->
 
 
@@ -399,12 +435,61 @@
             </div>
         </div>
     </section>
-
     <!-- ================> feature section end here <================== -->
 
+    <!-- ================> gallery section starts here <================== -->
+    <!-- <div style="
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding-block: 6rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+">
+        <div class="gallery">
+            <img src="https://picsum.photos/id/1004/400/400" alt="a lovely kiss in the night">
+            <img src="https://picsum.photos/id/1013/400/400" alt="a women inside a car">
+            <img src="https://picsum.photos/id/1066/400/400" alt="a baby">
+            <img src="https://picsum.photos/id/325/400/400" alt="a girl in the forest">
+            <img src="https://picsum.photos/id/65/400/400" alt="a girl">
+        </div>
+        <div class="gallery">
+            <img src="https://picsum.photos/id/1004/400/400" alt="a lovely kiss in the night">
+            <img src="https://picsum.photos/id/1013/400/400" alt="a women inside a car">
+            <img src="https://picsum.photos/id/1066/400/400" alt="a baby">
+            <img src="https://picsum.photos/id/325/400/400" alt="a girl in the forest">
+            <img src="https://picsum.photos/id/65/400/400" alt="a girl">
+        </div>
+        <div class="gallery">
+            <img src="https://picsum.photos/id/1004/400/400" alt="a lovely kiss in the night">
+            <img src="https://picsum.photos/id/1013/400/400" alt="a women inside a car">
+            <img src="https://picsum.photos/id/1066/400/400" alt="a baby">
+            <img src="https://picsum.photos/id/325/400/400" alt="a girl in the forest">
+            <img src="https://picsum.photos/id/65/400/400" alt="a girl">
+        </div>
+    </div> -->
+    <section class="feature padding-bottom bg--white" id="feature">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up" data-aos-duration="900">
+                <p class="subtitle">Glimpses from past</p>
+                <h2>Our Gallery</h2>
+            </div>
 
-
-
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+                space-between="30" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                <swiper-slide><img
+                        src="https://randomwordgenerator.com/img/picture-generator/5fe7d2474f56b10ff3d8992cc12c30771037dbf85254794e732a7ddd9e48_640.jpg"
+                        alt=""></swiper-slide>
+                <swiper-slide><img
+                        src="https://randomwordgenerator.com/img/picture-generator/53e3d6414a57ab14f1dc8460962e33791c3ad6e04e507440762e7ad39f45c3_640.jpg"
+                        alt=""></swiper-slide>
+                <swiper-slide><img
+                        src="https://randompicturegenerator.com/img/picture-generator/54e4d5454e51a514f1dc8460962e33791c3ad6e04e5074417d2d73dc9149c4_640.jpg"
+                        alt=""></swiper-slide>
+            </swiper-container>
+        </div>
+    </section>
+    <!-- ================> gallery section end here <================== -->
 
 
     <!-- ================> Event access section end here <================== -->
@@ -520,7 +605,7 @@
 
 
     <!-- ================> Pricing section start here <================== -->
-    ]<section class="pricing padding-top padding-bottom">
+    <section class="pricing padding-top padding-bottom">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up" data-aos-duration="900">
                 <p class="subtitle">Network, Learn, Grow: Register for Our Conference!</p>
@@ -625,16 +710,9 @@
                                     <p>Dr. Rajesh Kumar is a renowned professor specializing in materials engineering at
                                         IIT. He has published numerous research papers and is highly regarded in the
                                         academic community.</p>
-                                    <ul class="social">
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-twitter"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-facebook-f"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i
-                                                    class="fa-brands fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
+                                    <a href="#"
+                                        class="default-btn default-btn--secondary move-right viewspeaker"><span>View
+                                            More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -653,16 +731,9 @@
                                     <p>Dr. Sarah Johnson is a leading researcher in the field of nanotechnology. She has
                                         contributed extensively to the development of novel materials and holds several
                                         patents in her name.</p>
-                                    <ul class="social">
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-twitter"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-facebook-f"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i
-                                                    class="fa-brands fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
+                                    <a href="#"
+                                        class="default-btn default-btn--secondary move-right viewspeaker"><span>View
+                                            More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -681,16 +752,9 @@
                                     <p>Dr. Maria Garcia is a distinguished professor in the field of materials science
                                         and engineering at MIT. She specializes in biomaterials and their applications
                                         in medical devices and tissue engineering.</p>
-                                    <ul class="social">
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-twitter"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-facebook-f"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i
-                                                    class="fa-brands fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
+                                    <a href="#"
+                                        class="default-btn default-btn--secondary move-right viewspeaker"><span>View
+                                            More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -709,16 +773,9 @@
                                     <p>Dr. John Smith is a particle physicist and research scientist at CERN. He is
                                         involved in experiments related to the study of fundamental particles and their
                                         interactions using high-energy particle accelerators.</p>
-                                    <ul class="social">
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-twitter"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-facebook-f"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i
-                                                    class="fa-brands fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
+                                    <a href="#"
+                                        class="default-btn default-btn--secondary move-right viewspeaker"><span>View
+                                            More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -739,16 +796,9 @@
                                         specializing in the development of advanced materials for energy storage
                                         applications. His research focuses on lithium-ion batteries and supercapacitors.
                                     </p>
-                                    <ul class="social">
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-twitter"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-facebook-f"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i
-                                                    class="fa-brands fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
+                                    <a href="#"
+                                        class="default-btn default-btn--secondary move-right viewspeaker"><span>View
+                                            More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -767,16 +817,9 @@
                                     <p>Dr. Mia Roberts is an aerospace engineer and research scientist at NASA. She
                                         specializes in materials for spacecraft and space exploration missions, focusing
                                         on lightweight and durable materials for extreme environments.</p>
-                                    <ul class="social">
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-twitter"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-facebook-f"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i
-                                                    class="fa-brands fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
+                                    <a href="#"
+                                        class="default-btn default-btn--secondary move-right viewspeaker"><span>View
+                                            More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -796,16 +839,9 @@
                                         specializing in the development of functional materials for electronic and
                                         photonic applications. His research focuses on semiconductor materials and
                                         devices.</p>
-                                    <ul class="social">
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-twitter"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-facebook-f"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i
-                                                    class="fa-brands fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
+                                    <a href="#"
+                                        class="default-btn default-btn--secondary move-right viewspeaker"><span>View
+                                            More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -824,16 +860,9 @@
                                     <p>Dr. Carlos Fernandez is a materials scientist and researcher at the European
                                         Space Agency. He focuses on materials for space exploration and satellite
                                         technology, including thermal protection materials and advanced composites.</p>
-                                    <ul class="social">
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-twitter"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-facebook-f"></i></a>
-                                        </li>
-                                        <li><a href="#" class="social__link"><i
-                                                    class="fa-brands fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="social__link"><i class="fa-brands fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
+                                    <a href="#"
+                                        class="default-btn default-btn--secondary move-right viewspeaker"><span>View
+                                            More</span></a>
                                 </div>
                             </div>
                         </div>
@@ -845,7 +874,235 @@
     <!-- ================>Team section end here <================== -->
 
 
+    <section class="blog padding-top padding-bottom bg--white">
+        <div class="container">
 
+            <div class="section-header text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
+                <p class="subtitle">Places to Visit</p>
+                <h2>Tourism in Bhopal</h2>
+            </div>
+            <div class="blog__wrapper">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
+                            <div class="blog__inner">
+                                <div class="blog__thumb">
+                                    <swiper-container class="mySwiper" space-between="30" centered-slides="true"
+                                        autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                                        <swiper-slide><img
+                                                src="https://randomwordgenerator.com/img/picture-generator/5fe7d2474f56b10ff3d8992cc12c30771037dbf85254794e732a7ddd9e48_640.jpg"
+                                                alt=""></swiper-slide>
+                                        <swiper-slide><img
+                                                src="https://randomwordgenerator.com/img/picture-generator/53e3d6414a57ab14f1dc8460962e33791c3ad6e04e507440762e7ad39f45c3_640.jpg"
+                                                alt=""></swiper-slide>
+                                        <swiper-slide><img
+                                                src="https://randompicturegenerator.com/img/picture-generator/54e4d5454e51a514f1dc8460962e33791c3ad6e04e5074417d2d73dc9149c4_640.jpg"
+                                                alt=""></swiper-slide>
+                                    </swiper-container>
+                                </div>
+                                <div class="blog__content">
+                                    <div class="blog__content-top">
+                                        <span class="blog__meta-tag">5 <i class="fa-solid fa-star"
+                                                style="color:gold;"></i> Rated</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-binoculars"></i> Tour</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-landmark"></i>
+                                            Historical</span>
+                                        <h4><a href="blog-single.html">Sanchi Stupa</a></h4>
+                                    </div>
+                                    <p>Contrar to popuar belieif loreme Ipsum is an not
+                                        consectetur cites of the word in...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
+                            <div class="blog__inner">
+                                <div class="blog__thumb">
+                                    <swiper-container class="mySwiper" space-between="30" centered-slides="true"
+                                        autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                                        <swiper-slide><img
+                                                src="https://randomwordgenerator.com/img/picture-generator/5fe7d2474f56b10ff3d8992cc12c30771037dbf85254794e732a7ddd9e48_640.jpg"
+                                                alt=""></swiper-slide>
+                                        <swiper-slide><img
+                                                src="https://randomwordgenerator.com/img/picture-generator/53e3d6414a57ab14f1dc8460962e33791c3ad6e04e507440762e7ad39f45c3_640.jpg"
+                                                alt=""></swiper-slide>
+                                        <swiper-slide><img
+                                                src="https://randompicturegenerator.com/img/picture-generator/54e4d5454e51a514f1dc8460962e33791c3ad6e04e5074417d2d73dc9149c4_640.jpg"
+                                                alt=""></swiper-slide>
+                                    </swiper-container>
+                                </div>
+                                <div class="blog__content">
+                                    <div class="blog__content-top">
+                                        <span class="blog__meta-tag">5 <i class="fa-solid fa-star"
+                                                style="color:gold;"></i> Rated</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-binoculars"></i> Tour</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-landmark"></i>
+                                            Historical</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-baseball-bat-ball"></i>
+                                            Games</span>
+                                        <h4><a href="blog-single.html">Sanchi Stupa</a></h4>
+                                    </div>
+                                    <p>Contrar to popuar belieif loreme Ipsum is an not
+                                        consectetur cites of the word in...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
+                            <div class="blog__inner">
+                                <div class="blog__thumb">
+                                    <swiper-container class="mySwiper" space-between="30" centered-slides="true"
+                                        autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                                        <swiper-slide><img
+                                                src="https://randomwordgenerator.com/img/picture-generator/5fe7d2474f56b10ff3d8992cc12c30771037dbf85254794e732a7ddd9e48_640.jpg"
+                                                alt=""></swiper-slide>
+                                        <swiper-slide><img
+                                                src="https://randomwordgenerator.com/img/picture-generator/53e3d6414a57ab14f1dc8460962e33791c3ad6e04e507440762e7ad39f45c3_640.jpg"
+                                                alt=""></swiper-slide>
+                                        <swiper-slide><img
+                                                src="https://randompicturegenerator.com/img/picture-generator/54e4d5454e51a514f1dc8460962e33791c3ad6e04e5074417d2d73dc9149c4_640.jpg"
+                                                alt=""></swiper-slide>
+                                    </swiper-container>
+                                </div>
+                                <div class="blog__content">
+                                    <div class="blog__content-top">
+                                        <span class="blog__meta-tag">5 <i class="fa-solid fa-star"
+                                                style="color:gold;"></i> Rated</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-binoculars"></i> Tour</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-landmark"></i>
+                                            Historical</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-baseball-bat-ball"></i>
+                                            Games</span>
+                                        <h4><a href="blog-single.html">Sanchi Stupa</a></h4>
+                                    </div>
+                                    <p>Contrar to popuar belieif loreme Ipsum is an not
+                                        consectetur cites of the word in...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog padding-top padding-bottom bg--white">
+        <div class="container">
+
+            <div class="section-header text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
+                <p class="subtitle">Places to Stay</p>
+                <h2>Hotels in Bhopal</h2>
+            </div>
+            <div class="blog__wrapper">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
+                            <div class="blog__inner">
+                                <div class="blog__thumb">
+                                    <swiper-container class="mySwiper" space-between="30" centered-slides="true"
+                                        autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                                        <swiper-slide><img
+                                                src="https://randomwordgenerator.com/img/picture-generator/5fe7d2474f56b10ff3d8992cc12c30771037dbf85254794e732a7ddd9e48_640.jpg"
+                                                alt=""></swiper-slide>
+                                        <swiper-slide><img
+                                                src="https://randomwordgenerator.com/img/picture-generator/53e3d6414a57ab14f1dc8460962e33791c3ad6e04e507440762e7ad39f45c3_640.jpg"
+                                                alt=""></swiper-slide>
+                                        <swiper-slide><img
+                                                src="https://randompicturegenerator.com/img/picture-generator/54e4d5454e51a514f1dc8460962e33791c3ad6e04e5074417d2d73dc9149c4_640.jpg"
+                                                alt=""></swiper-slide>
+                                    </swiper-container>
+                                </div>
+                                <div class="blog__content">
+                                    <div class="blog__content-top">
+                                        <span class="blog__meta-tag">5 <i class="fa-solid fa-star"
+                                                style="color:gold;"></i> Hotel</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-train"></i> Railway
+                                            (5km)</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-bus"></i> Bus (2km)</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-building-columns"></i> MANIT
+                                            (2km)</span>
+                                        <h4><a href="blog-single.html">Hotel Radisson</a></h4>
+                                    </div>
+                                    <p>Contrar to popuar belieif loreme Ipsum is an not
+                                        consectetur cites of the word in...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
+                            <div class="blog__inner">
+                                <div class="blog__thumb">
+                                    <swiper-container class="mySwiper" space-between="30" centered-slides="true"
+                                        autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                                        <swiper-slide><img
+                                                src="https://randomwordgenerator.com/img/picture-generator/5fe7d2474f56b10ff3d8992cc12c30771037dbf85254794e732a7ddd9e48_640.jpg"
+                                                alt=""></swiper-slide>
+                                        <swiper-slide><img
+                                                src="https://randomwordgenerator.com/img/picture-generator/53e3d6414a57ab14f1dc8460962e33791c3ad6e04e507440762e7ad39f45c3_640.jpg"
+                                                alt=""></swiper-slide>
+                                        <swiper-slide><img
+                                                src="https://randompicturegenerator.com/img/picture-generator/54e4d5454e51a514f1dc8460962e33791c3ad6e04e5074417d2d73dc9149c4_640.jpg"
+                                                alt=""></swiper-slide>
+                                    </swiper-container>
+                                </div>
+                                <div class="blog__content">
+                                    <div class="blog__content-top">
+                                        <span class="blog__meta-tag">5 <i class="fa-solid fa-star"
+                                                style="color:gold;"></i> Hotel</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-train"></i> Railway
+                                            (5km)</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-bus"></i> Bus (2km)</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-building-columns"></i> MANIT
+                                            (2km)</span>
+                                        <h4><a href="blog-single.html">Taj Hotel</a></h4>
+                                    </div>
+                                    <p>Contrar to popuar belieif loreme Ipsum is an not
+                                        consectetur cites of the word in...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__item aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
+                            <div class="blog__inner">
+                                <div class="blog__thumb">
+                                    <swiper-container class="mySwiper" space-between="30" centered-slides="true"
+                                        autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                                        <swiper-slide><img
+                                                src="https://randomwordgenerator.com/img/picture-generator/5fe7d2474f56b10ff3d8992cc12c30771037dbf85254794e732a7ddd9e48_640.jpg"
+                                                alt=""></swiper-slide>
+                                        <swiper-slide><img
+                                                src="https://randomwordgenerator.com/img/picture-generator/53e3d6414a57ab14f1dc8460962e33791c3ad6e04e507440762e7ad39f45c3_640.jpg"
+                                                alt=""></swiper-slide>
+                                        <swiper-slide><img
+                                                src="https://randompicturegenerator.com/img/picture-generator/54e4d5454e51a514f1dc8460962e33791c3ad6e04e5074417d2d73dc9149c4_640.jpg"
+                                                alt=""></swiper-slide>
+                                    </swiper-container>
+                                </div>
+                                <div class="blog__content">
+                                    <div class="blog__content-top">
+                                        <span class="blog__meta-tag">5 <i class="fa-solid fa-star"
+                                                style="color:gold;"></i> Hotel</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-train"></i> Railway
+                                            (5km)</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-bus"></i> Bus (2km)</span>
+                                        <span class="blog__meta-tag"><i class="fa-solid fa-building-columns"></i> MANIT
+                                            (2km)</span>
+                                        <h4><a href="blog-single.html">Hotel Grand Villas</a></h4>
+                                    </div>
+                                    <p>Contrar to popuar belieif loreme Ipsum is an not
+                                        consectetur cites of the word in...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- ================>Sponsor section start here <================== -->
@@ -917,7 +1174,137 @@
     </section>
     <!-- ================>Sponsor section end here <================== -->
 
+    <section class="pricing padding-top padding-bottom">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up" data-aos-duration="900">
+                <p class="subtitle">Get Brand Visibility</p>
+                <h2>Sponsorship Segments</h2>
+            </div>
+            <div class="pricing__wrapper">
+                <div class="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1">
+                    <div class="col">
+                        <div class="pricing__item" data-aos="fade-up" data-aos-duration="900">
+                            <div class="pricing__inner">
+                                <div class="pricing__head sponsortag">
+                                    <h4>₹40000</h4>
+                                </div>
+                                <div class="pricing__body">
+                                    <h4>Diamond Sponsor</h4>
+                                    <ul>
+                                        <li>
+                                            <p class="pricing__title"> <span><i
+                                                        class="fa-solid fa-circle-check"></i></span> Deliverable 1</p>
+                                        </li>
+                                        <li>
+                                            <p class="pricing__title"><span><i
+                                                        class="fa-solid fa-circle-xmark"></i></span> Deliverable 2</p>
+                                        </li>
+                                        <li>
+                                            <p class="pricing__title"> <span><i
+                                                        class="fa-solid fa-circle-xmark"></i></span> Deliverable 3</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__footer">
+                                    <a href="login.html" class="default-btn move-top"><span>Select Plan</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col">
+                        <div class="pricing__item" data-aos="fade-up" data-aos-duration="900">
+                            <div class="pricing__inner">
+                                <div class="pricing__head sponsortag">
+                                    <h4>₹25000</h4>
+                                </div>
+                                <div class="pricing__body">
+                                    <h4>Gold Sponsor</h4>
+                                    <ul>
+                                        <li>
+                                            <p class="pricing__title"> <span><i
+                                                        class="fa-solid fa-circle-check"></i></span> Deliverable 1</p>
+                                        </li>
+                                        <li>
+                                            <p class="pricing__title"><span><i
+                                                        class="fa-solid fa-circle-check"></i></span> Deliverable 2</p>
+                                        </li>
+                                        <li>
+                                            <p class="pricing__title"> <span><i
+                                                        class="fa-solid fa-circle-xmark"></i></span> Deliverable 3</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__footer">
+                                    <a href="login.html" class="default-btn move-top"><span>Select Plan</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="pricing__item" data-aos="fade-up" data-aos-duration="900">
+                            <div class="pricing__inner">
+                                <div class="pricing__head sponsortag">
+                                    <h4>₹15000</h4>
+                                </div>
+                                <div class="pricing__body">
+                                    <h4>Silver Sponsor</h4>
+                                    <ul>
+                                        <li>
+                                            <p class="pricing__title"> <span><i
+                                                        class="fa-solid fa-circle-check"></i></span> Deliverable 1</p>
+                                        </li>
+                                        <li>
+                                            <p class="pricing__title"><span><i
+                                                        class="fa-solid fa-circle-check"></i></span> Deliverable 2</p>
+                                        </li>
+                                        <li>
+                                            <p class="pricing__title"> <span><i
+                                                        class="fa-solid fa-circle-xmark"></i></span> Deliverable 3</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__footer">
+                                    <a href="login.html" class="default-btn move-top"><span>Select Plan</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="pricing__item" data-aos="fade-up" data-aos-duration="900">
+                            <div class="pricing__inner">
+                                <div class="pricing__head sponsortag">
+                                    <h4>₹10000</h4>
+                                </div>
+                                <div class="pricing__body">
+                                    <h4>Bronze Sponsor</h4>
+                                    <ul>
+                                        <li>
+                                            <p class="pricing__title"> <span><i
+                                                        class="fa-solid fa-circle-check"></i></span> Deliverable 1</p>
+                                        </li>
+                                        <li>
+                                            <p class="pricing__title"><span><i
+                                                        class="fa-solid fa-circle-check"></i></span> Deliverable 2</p>
+                                        </li>
+                                        <li>
+                                            <p class="pricing__title"> <span><i
+                                                        class="fa-solid fa-circle-xmark"></i></span> Deliverable 3</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing__footer">
+                                    <a href="login.html" class="default-btn move-top"><span>Select Plan</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

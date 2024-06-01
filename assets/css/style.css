@@ -1421,12 +1421,15 @@ ol {
 }
 
 .header-wrapper {
-  padding: 23px 0;
+  padding: 10px 0;
 }
 
 @media (min-width: 576px) {
   .header-wrapper {
     position: relative;
+  }
+  #menudiv{
+    display: none;
   }
 }
 
@@ -1437,6 +1440,9 @@ ol {
 @media (max-width: 575px) {
   .header-wrapper .logo {
     width: 160px;
+  }
+  #topbtnreg{
+    display: none;
   }
 }
 
@@ -1465,11 +1471,11 @@ ol {
 
 .menu>li>a {
   color: #19183e;
-  font-size: 16px;
-  padding: 15px 22px;
-  text-transform: capitalize;
+  font-size: 15px;
+  padding: 15px 10px;
+  text-transform: uppercase;
   font-family: "Inter", sans-serif;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .menu>li>a i {
@@ -1856,7 +1862,7 @@ ol {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-block: 160px;
+  padding-block: 160px 50px;
 }
 
 .banner--overlay:after {
@@ -4150,4 +4156,16 @@ ol {
 
 .countdown{
   flex-wrap: nowrap !important;
+}
+
+.sponsortag {
+  background-color: #32C2FA;
+  border-radius: 0 0 30px 30px;
+  max-inline-size: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.viewspeaker{
+  line-height: 40px !important;
 }
