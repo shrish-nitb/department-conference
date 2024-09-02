@@ -29,8 +29,12 @@
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
 
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </head>
 
 <body>
@@ -46,7 +50,7 @@
     <!-- ========== Multipage Header Section Starts Here========== -->
     <header class="header-section">
         <div class="header-bottom">
-            <div class="container">
+            <div class="px-5">
                 <div class="header-wrapper" style="flex-wrap: nowrap;">
                     <div class="logo">
                         <a href="index.html">
@@ -61,39 +65,42 @@
                                 <a href="#home">Home</a>
 
                             </li>
-                            <!-- <li>
-                                <a href="#faq">Pages</a>
-                                <ul class="submenu">
-                                    <li><a href="schedule.html">Call For Papers</a></li>
-                                    <li><a href="pricing.html">Pricing</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                </ul>
-                            </li> -->
+
                             <li>
                                 <a href="contact.html">About</a>
                             </li>
                             <li>
-                                <a href="contact.html">Gallery</a>
+                                <a href="#faq">Call For Papers</a>
+                                <ul class="submenu">
+                                    <li><a href="schedule.html">Call For Papers</a></li>
+                                    <li><a href="scope.html">Scope</a></li>
+                                    <li><a href="faq.html">Publishers</a></li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="contact.html">Fees</a>
+                                <a href="contact.html">Important Dates</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Registration</a>
                             </li>
                             <li>
                                 <a href="contact.html">Speakers</a>
                             </li>
                             <li>
-                                <a href="contact.html">Sponsor</a>
+                                <a href="contact.html">Committees</a>
                             </li>
                             <li>
-                                <a href="contact.html">Bhopal</a>
+                                <a href="contact.html">Brochure</a>
                             </li>
-                           
                             <li>
-                                <a href="contact.html">FAQ</a>
+                                <a href="contact.html">Sponsorship</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
                             </li>
                         </ul>
                         <div class="header-btn" id="topbtnreg">
-                            <a href="#" class="default-btn move-right">
+                            <a href="#" class="default-btn move-top">
                                 <span>Register <i class="fa-solid fa-arrow-right"></i></span>
                             </a>
                         </div>
@@ -217,9 +224,54 @@
 
 
     <!-- ================> About section start here <================== -->
-    <section class="about padding-top padding-bottom">
+    <section class="about padding-top padding-bottom bg--white">
         <div class="container">
             <div class="about__wrapper">
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <div class="about__content" data-aos="fade-up" data-aos-duration="2000">
+                            <p class="subtitle">ABOUT THE INSTITUTION</p>
+                            <h2>MANIT Bhopal</h2>
+                            <p style="text-align:justify">
+                                Maulana Azad National Institute of Technology (MANIT) was established in 1960.
+                                &NonBreakingSpace; It is one of the leading institutions of national importance in
+                                technical education. &NonBreakingSpace; It offers Bachelors, Masters and Doctoral
+                                programmes in Architecture, Planning, Engineering, Sciences, Computer Application, and
+                                Management.
+
+                                The programmes of study include 09 Bachelors, 01 Dual Degree, 28 Masters of Technology,
+                                02 Masters of Planning, 02 Masters of Science, Master of Computer Application (MCA) and
+                                Master of Business Administration (MBA) and various Doctoral programmes. MANIT
+                                collaborates with multiple foreign Institutions and Industries for Research and
+                                Development.
+                                It has established Centres of Excellence in Artificial Intelligence, Smart
+                                Manufacturing, Water Resource Management and Cable Technology. MANIT has seamless
+                                internet connectivity in the entire campus and has recently added a Central Computing
+                                Facility, a Central Research Facility and a Data Centre.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about__content" data-aos="fade-up" data-aos-duration="2000">
+                            <p class="subtitle">ABOUT THE CAMPUS</p>
+                            <h2>The Campus</h2>
+                            <p style="text-align:justify">
+                                The total area of campus is 650 acres and protected by boundary wall and ring road. The
+                                entire campus consists of administrative and academic building, workshop, Library and
+                                community center, Residential area accommodation for students and staff and other
+                                general amenities such as post office, Shopping complex, a School for children,
+                                dispensary, an auditorium with the capacity of 1000 persons and sports complex with vast
+                                expanse of open area.
+                            </p>
+                            <img src="./assets/images/about/file.png" alt="" style="
+                            filter: drop-shadow(2px 4px 6px black);
+                            transform: rotateX(27deg);
+                        ">
+                        </div>
+                    </div>
+                </div>
+                <p class="subtitle" style="margin-top: 0;">ABOUT THE DEPARTMENT</p>
+                <h2 style="margin-top: 0;">Materials and Metallurgical Engineering</h2>
                 <div class="row g-5 center-align">
                     <div class="col-lg-6">
                         <div class="about__thumb" data-aos="fade-up" data-aos-duration="1500">
@@ -232,58 +284,146 @@
                     </div>
                     <div class="col-lg-6 px-5">
                         <div class="about__content" data-aos="fade-up" data-aos-duration="2000">
-                            <p class="subtitle">ABOUT THE INSTITUTION</p>
-                            <h2>MANIT Bhopal</h2>
-                            <p>Maulana Azad National Institute of Technology (MANIT), an Institute of National
-                                Importance, was formerly known as Maulana Azad College of Technology (MACT).
 
-                                Institute is named after the great scholar and the 1st Education Minister of Govt. of
-                                India, Maulana Abul Kalam Azad. The Govt. of India and Govt. of Madhya Pradesh jointly
-                                sponsored the Institute in 1960 to attract bright young engineering students across the
-                                country.
-                                <br>
-                                Institute is successfully producing the highest quality skilled manpower to
-                                cope up with the challenges of modern technological advances with more than 200
-                                faculties and 5000 students. The Institute offers 09 UG and 30 PG courses, and also
-                                Ph.D. research programmes.
+                            <p style="text-align:justify">The Department of Materials and Metallurgical
+                                Engineering (MME) was established in the year 2007
+                                with a vision of creating a world class environment for
+                                education and R&D in the field of Materials and
+                                Metallurgical Engineering. The department is working
+                                towards creating collaborative and supportive
+                                environment that ignites advances in materials research
+                                in India by developing fundamental understanding,
+                                adopting frontier technologies, providing education and
+                                enabling technological innovations. The department
+                                offers undergraduate program in Materials and
+                                Metallurgical Engineering, PG program in Materials
+                                Science and Technology and Ph.D. program. The
+                                Department has developed few state-of-art facilities in
+                                materials processing and characterization. These
+                                facilities includes Scanning Electron Microscope with
+                                EDX Facility, X-Ray Diffraction Facility, Thin Film
+                                Processing (PVD cum PECVD), Facilities for corrosion
+                                and electrochemical studies (Potentiostat/Galvanostat),
+                                Destructive and Non-Destructive Testing Facilities,
+                                Advanced Materials Processing Facilities (Planetary Bal
+                                Mills, High Temperature Furnaces, Microwave
+                                Processing)
                             </p>
-
-                            <!-- <div class="about__content-feature">
-                                <h5>About the conference</h5>
-                                <p>The International Conference on Materials for Advanced Technology brings together the
-                                    world's leading academic scholars, researchers, and industrialists to exchange and
-                                    share information on all aspects of advancements in materials science and
-                                    technology. In addition, the conference provides a premier interdisciplinary forum
-                                    for researchers, practitioners, and educators to explore and discuss the most recent
-                                    innovations, trends, and concerns as well as practical challenges encountered and
-                                    solutions adopted in their respective fields.
-                                    <br><br>
-
-                                    In today’s rapidly changing world of materials, there are many fascinating and
-                                    ever-growing options. The understanding of such a wide variety of materials demand
-                                    an interdisciplinary knowledge of disciplines such as materials science and
-                                    engineering, mechanical engineering, physics, chemistry, biology and mathematics.
-                                    <br><br>
-
-                                    ICAMT-2024 will feature some of the world's leading experts as keynote speakers and
-                                    poster presenters. These will inspire the researchers with an exposure to a variety
-                                    of topics and provide opportunity for discussions with stalwarts of materials
-                                    research.
-                                </p>
-
-                                <div class="btn-group">
-                                    <a href="#"
-                                        class="default-btn default-btn--secondary move-top"><span>Register</span> </a>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="padding-top">
+            <div class="section-header text-center" data-aos="fade-up" data-aos-duration="900">
+                <p class="subtitle">HOW TO REACH</p>
+                <h2>MANIT</h2>
+            </div>
+
+            <div class="feature__wrapper">
+                <div class="row g-5 justify-content-evenly px-5">
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a class="silent-link" data-toggle="tooltip" data-placement="top" title="Click for Directions"
+                            href="https://maps.app.goo.gl/x9hjzwmN7eM2NaK79">
+                            <div class="feature__item" data-aos="fade-up" data-aos-duration="900">
+                                <div class="feature__item-inner">
+                                    <div class="feature__item-thumb">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-plane-arrival"></i>
+                                        </div>
+                                    </div>
+                                    <div class="feature__item-content text-center">
+                                        <h4>Raja Bhoj International Airport</h4>
+                                        <div class="feature__item-text" style="text-align:justify">
+                                            <p>Bhopal is well connected with daily flights from Delhi, Mumbai,
+                                                Gwalior and Indore. MANIT is 16 Km from the airport.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a class="silent-link" data-toggle="tooltip" data-placement="top" title="Click for Directions"
+                            href="https://maps.app.goo.gl/Zj12Y6fTDqv3FuHfA">
+                            <div class="feature__item" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+                                <div class="feature__item-inner">
+                                    <div class="feature__item-thumb">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-train"></i>
+                                        </div>
+                                    </div>
+                                    <div class="feature__item-content text-center">
+                                        <h4>Rani Kamalapati Railway Station</h4>
+                                        <div class="feature__item-text" style="text-align:justify">
+                                            <p>Bhopal is best connected by train on the central and southern railways.
+                                                It is
+                                                well connected with trains from Mumbai, Bangalore to Delhi, Trivandrum
+                                                etc. <br>
+                                                The Ranikamlapati Railway station is 5 kms away from MANIT.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <a class="silent-link" data-toggle="tooltip" data-placement="top" title="Click for Directions"
+                            href="https://maps.app.goo.gl/jUYKUpGvrA3eV5Q26">
+                            <div class="feature__item" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+                                <div class="feature__item-inner">
+                                    <div class="feature__item-thumb">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-train"></i>
+                                        </div>
+                                    </div>
+                                    <div class="feature__item-content text-center">
+                                        <h4>Bhopal Junction Railway station</h4>
+                                        <div class="feature__item-text" style="text-align:justify">
+                                            <p>Bhopal is best connected by train on the central and southern railways.
+                                                It is
+                                                well connected with trains from Mumbai, Bangalore to Delhi, Trivandrum
+                                                etc. <br>
+                                                The Bhopal Junction railway station is 7 kms away from MANIT.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="feature__item" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+                            <div class="feature__item-inner">
+                                <div class="feature__item-thumb">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-bus"></i>
+                                    </div>
+                                </div>
+                                <div class="feature__item-content text-center">
+                                    <h4>Bus</h4>
+                                    <div class="feature__item-text" style="text-align:justify">
+                                        <p>Bhopal is well connected with Bus service from Bhopal Transportation and
+                                            Local transportation <br>
+                                            From Bhopal Junction to Mata Mandir :SR3 and Bus No-3
+                                            From Habibganj to Mata Mandir :SR3 and Bus No-2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
     <!-- ================> About section end here <================== -->
-
 
     <!-- ================> Event access section start here <================== -->
     <section class="event-access padding-top padding-bottom">
@@ -297,7 +437,8 @@
                         <div class="event-access-content" data-aos="fade-right" data-aos-duration="900">
                             <span class="subtitle" style="color:#19183e;">Announcement & Call for Papers</span>
                             <h2 style="letter-spacing: 3.9px;">ICAMT 2024</h2>
-                            <p>The International Conference on Materials for Advanced Technology brings together the
+                            <p style="text-align:justify">The International Conference on Materials for Advanced
+                                Technology brings together the
                                 world's leading academic scholars, researchers, and industrialists to exchange and share
                                 information on all aspects of advancements in materials science and technology. In
                                 addition, the conference provides a premier interdisciplinary forum for researchers,
@@ -314,7 +455,7 @@
                                 topics and provide opportunity for discussions with stalwarts of materials research.</p>
 
 
-                            <h3>Scope</h3>
+                            <!-- <h3>Scope</h3>
                             <p style="margin-bottom: 10px;">
                                 The conference will have oral and poster sessions covering topics such as those given
                                 below:
@@ -324,6 +465,9 @@
                             <div class="topic">Electronic materials and devices</div>
                             <div class="topic">Advanced ceramics</div>
                             <div class="topic">Advanced composites</div>
+                            <div class="topic">Metals and Alloys</div>
+                            <div class="topic">High Entropy Alloys</div>
+                            <div class="topic">Computational Materials</div>
                             <div class="topic">Self-healing materials</div>
                             <div class="topic">High temperature materials</div>
                             <div class="topic">New energy materials</div>
@@ -342,7 +486,7 @@
 
                             </p>
                             <a href="#" class="default-btn move-right"><span>Register Now <i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
+                                        class="fa-solid fa-arrow-right"></i></span></a> -->
                         </div>
                     </div>
                 </div>
@@ -350,92 +494,6 @@
         </div>
     </section>
 
-
-    <!-- ================> feature section start here <================== -->
-    <section class="feature padding-top padding-bottom bg--white" id="feature">
-        <div class="container">
-            <div class="section-header text-center" data-aos="fade-up" data-aos-duration="900">
-                <p class="subtitle">Key Highlights</p>
-                <h2>What to Expect?</h2>
-            </div>
-
-            <div class="feature__wrapper">
-                <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="feature__item" data-aos="fade-up" data-aos-duration="900">
-                            <div class="feature__item-inner">
-                                <div class="feature__item-thumb">
-                                    <div class="icon">
-                                        <i class="fa-solid fa-book"></i>
-                                    </div>
-                                </div>
-                                <div class="feature__item-content text-center">
-                                    <h4>Publication opportunities</h4>
-                                    <div class="feature__item-text">
-                                        <p>The selected papers of ICAMT-2024 will be published in one of the forthcoming
-                                            issues of a reputed SCI/Scopus indexed journal.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="feature__item" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-                            <div class="feature__item-inner">
-                                <div class="feature__item-thumb">
-                                    <div class="icon">
-                                        <i class="fa-solid fa-boxes-stacked"></i>
-                                    </div>
-                                </div>
-                                <div class="feature__item-content text-center">
-                                    <h4>Success Stories</h4>
-                                    <div class="feature__item-text">
-                                        <p>Inspiring tales of breakthroughs and innovations in materials engineering.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="feature__item" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
-                            <div class="feature__item-inner">
-                                <div class="feature__item-thumb">
-                                    <div class="icon">
-                                        <i class="fa-solid fa-puzzle-piece"></i>
-                                    </div>
-                                </div>
-                                <div class="feature__item-content text-center">
-                                    <h4>Quiz Sessions</h4>
-                                    <div class="feature__item-text">
-                                        <p>Engaging quizzes to test your knowledge and understanding.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="feature__item" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
-                            <div class="feature__item-inner">
-                                <div class="feature__item-thumb">
-                                    <div class="icon">
-                                        <i class="fa-solid fa-award"></i>
-                                    </div>
-                                </div>
-                                <div class="feature__item-content text-center">
-                                    <h4>Awards Ceremony</h4>
-                                    <div class="feature__item-text">
-                                        <p>Celebrating excellence with prestigious awards in materials engineering.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ================> feature section end here <================== -->
 
     <!-- ================> gallery section starts here <================== -->
     <!-- <div style="
@@ -468,211 +526,139 @@
             <img src="https://picsum.photos/id/65/400/400" alt="a girl">
         </div>
     </div> -->
-    <section class="feature padding-bottom bg--white" id="feature">
-        <div class="container">
+    <!-- ================> scope section start here <================== -->
+    <section class="scope bg--white padding-top ">
+        <div class="px-5">
             <div class="section-header text-center" data-aos="fade-up" data-aos-duration="900">
-                <p class="subtitle">Glimpses from past</p>
-                <h2>Our Gallery</h2>
+                <h2>Scope</h2>
             </div>
-
-            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
-                space-between="30" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-                <swiper-slide><img
-                        src="https://randomwordgenerator.com/img/picture-generator/5fe7d2474f56b10ff3d8992cc12c30771037dbf85254794e732a7ddd9e48_640.jpg"
-                        alt=""></swiper-slide>
-                <swiper-slide><img
-                        src="https://randomwordgenerator.com/img/picture-generator/53e3d6414a57ab14f1dc8460962e33791c3ad6e04e507440762e7ad39f45c3_640.jpg"
-                        alt=""></swiper-slide>
-                <swiper-slide><img
-                        src="https://randompicturegenerator.com/img/picture-generator/54e4d5454e51a514f1dc8460962e33791c3ad6e04e5074417d2d73dc9149c4_640.jpg"
-                        alt=""></swiper-slide>
-            </swiper-container>
-        </div>
-    </section>
-    <!-- ================> gallery section end here <================== -->
-
-
-    <!-- ================> Event access section end here <================== -->
-
-
-
-    <!-- ================> Event schedule section start here <================== -->
-    <section class="schedule padding-top padding-bottom">
-        <div class="container">
-            <div class="section-header text-center" data-aos="fade-up" data-aos-duration="900">
-                <p class="subtitle">Monday 10AM - 06PM</p>
-                <h2>Events Schdule</h2>
-            </div>
-            <div class="schedule__wrapper">
-                <div class="row g-5">
-                    <div class="col-lg-6">
-                        <div class="schedule__item" data-aos="fade-up-left" data-aos-duration="1000">
-                            <div class="schedule__item-inner">
-                                <div class="schedule__item-time">
-                                    <h6>10am - 12pm</h6>
-                                </div>
-                                <div class="schedule__item-content">
-                                    <h4>Consectetur Adipisicing elit Eiusmod</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perferendis
-                                        officiis quae eius delectus, aliquid deserunt, repudiandae consectetur corporis,
-                                        molestiae ipsam. Aut dolore iure excepturi!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 offset-lg-6">
-                        <div class="schedule__item schedule__item--right" data-aos="fade-up-right"
-                            data-aos-duration="1000">
-                            <div class="schedule__item-inner">
-                                <div class="schedule__item-time">
-                                    <h6>12pm - 2pm</h6>
-                                </div>
-                                <div class="schedule__item-content">
-                                    <h4>Consectetur Adipisicing elit Eiusmod</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perferendis
-                                        officiis quae eius delectus, aliquid deserunt, repudiandae consectetur corporis,
-                                        molestiae ipsam. Aut dolore iure excepturi!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="schedule__item" data-aos="fade-up-left" data-aos-duration="1000">
-                            <div class="schedule__item-inner">
-                                <div class="schedule__item-time">
-                                    <h6>2pm - 4pm</h6>
-                                </div>
-                                <div class="schedule__item-content">
-                                    <h4>Consectetur Adipisicing elit Eiusmod</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perferendis
-                                        officiis quae eius delectus, aliquid deserunt, repudiandae consectetur corporis,
-                                        molestiae ipsam. Aut dolore iure excepturi!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 offset-lg-6">
-                        <div class="schedule__item schedule__item--right" data-aos="fade-up-right"
-                            data-aos-duration="1000">
-                            <div class="schedule__item-inner">
-                                <div class="schedule__item-time">
-                                    <h6>4pm - 6pm</h6>
-                                </div>
-                                <div class="schedule__item-content">
-                                    <h4>Consectetur Adipisicing elit Eiusmod</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perferendis
-                                        officiis quae eius delectus, aliquid deserunt, repudiandae consectetur corporis,
-                                        molestiae ipsam. Aut dolore iure excepturi!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-5">
-                    <a href="#" class="default-btn default-btn--secondary move-right"><span>Book a Seat <i
-                                class="fa-solid fa-arrow-right"></i></span></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ================> Event schedule section end here <================== -->
-
-
-
-
-
-    <!-- ================> CTA section start here <================== -->
-    <section class="cta">
-        <div class="container">
-            <div class="cta__wrapper" data-aos="flip-up" data-aos-duration="1000"
-                style="background-image:url(assets/images/cta/bg.png)">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="cta__content">
-                            <h2>Download Events Schedule as PDF</h2>
-                            <a href="#" class="default-btn default-btn--secondary move-bottom"><span>Download Now <i
-                                        class="fa-solid fa-arrow-down"></i></span> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ================> CTA section end here <================== -->
-
-
-
-
-
-    <!-- ================> Pricing section start here <================== -->
-    <section class="pricing padding-top padding-bottom">
-        <div class="container">
-            <div class="section-header text-center" data-aos="fade-up" data-aos-duration="900">
-                <p class="subtitle">Network, Learn, Grow: Register for Our Conference!</p>
-                <h2>Registration Fees</h2>
-            </div>
-            <div class="pricing__wrapper">
+            <div class="scope__wrapper">
                 <div class="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1">
                     <div class="col">
-                        <div class="pricing__item" data-aos="fade-up" data-aos-duration="900">
-                            <div class="pricing__inner">
-                                <div class="pricing__head">
-                                    <h4>₹4000</h4>
-                                </div>
-                                <div class="pricing__body">
-                                    <h4>Participants from India/SAARC Countries</h4>
+                        <div class="scope__item" data-aos="fade-up" data-aos-duration="900">
+                            <div class="scope__inner">
+                                <div class="scope__body">
+                                    <h4>Lorem ipsum dolor sit.</h4>
                                     <ul>
                                         <li>
-                                            <p class="pricing__title"> <span><i
-                                                        class="fa-solid fa-circle-check"></i></span> Basic Paper
-                                                Submission</p>
-                                        </li>
-                                        <li>
-                                            <p class="pricing__title"><span><i
-                                                        class="fa-solid fa-circle-xmark"></i></span> Limited Revisions
+                                            <p class="scope__title"> <span><i class="fa-regular fa-bookmark"></i>Shape
+                                                    memory alloys</span>
                                             </p>
                                         </li>
                                         <li>
-                                            <p class="pricing__title"> <span><i
-                                                        class="fa-solid fa-circle-xmark"></i></span> Standard Review
-                                                Process</p>
+                                            <p class="scope__title"><span><i
+                                                        class="fa-regular fa-bookmark"></i></span>Functional materials
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="scope__title"> <span><i
+                                                        class="fa-regular fa-bookmark"></i></span>Electronic materials
+                                                and devices</p>
+                                        </li>
+                                        <li>
+                                            <p class="scope__title"> <span><i
+                                                        class="fa-regular fa-bookmark"></i></span>Advanced ceramics</p>
                                         </li>
                                     </ul>
-                                </div>
-                                <div class="pricing__footer">
-                                    <a href="login.html" class="default-btn move-top"><span>Select Plan</span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="pricing__item" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-                            <div class="pricing__inner">
-                                <div class="pricing__head">
-                                    <h4>US $300</h4>
-                                </div>
-                                <div class="pricing__body">
-                                    <h4>Overseas Participants <br><br></h4>
+                        <div class="scope__item" data-aos="fade-up" data-aos-duration="900">
+                            <div class="scope__inner">
+                                <div class="scope__body">
+                                    <h4>Lorem ipsum dolor sit.</h4>
                                     <ul>
                                         <li>
-                                            <p class="pricing__title"> <span><i
-                                                        class="fa-solid fa-circle-check"></i></span> Premium Paper
-                                                Submission</p>
-                                        </li>
-                                        <li>
-                                            <p class="pricing__title"><span><i
-                                                        class="fa-solid fa-circle-check"></i></span> Unlimited Revisions
+                                            <p class="scope__title"> <span><i
+                                                        class="fa-regular fa-bookmark"></i>Advanced composites</span>
                                             </p>
                                         </li>
                                         <li>
-                                            <p class="pricing__title"> <span><i
-                                                        class="fa-solid fa-circle-check"></i></span> Expedited Review
-                                                Process</p>
+                                            <p class="scope__title"><span><i
+                                                        class="fa-regular fa-bookmark"></i></span>Metals and Alloys
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="scope__title"> <span><i
+                                                        class="fa-regular fa-bookmark"></i></span>High Entropy Alloys
+                                            </p>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="pricing__footer">
-                                    <a href="login.html" class="default-btn move-top"><span>Select Plan</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="scope__item" data-aos="fade-up" data-aos-duration="900">
+                            <div class="scope__inner">
+                                <div class="scope__body">
+                                    <h4>Lorem ipsum dolor sit.</h4>
+                                    <ul>
+                                        <li>
+                                            <p class="scope__title"> <span><i
+                                                        class="fa-regular fa-bookmark"></i>Computational
+                                                    Materials</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="scope__title"><span><i
+                                                        class="fa-regular fa-bookmark"></i></span>Self-healing materials
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="scope__title"> <span><i
+                                                        class="fa-regular fa-bookmark"></i></span>High temperature
+                                                materials</p>
+                                        </li>
+                                        <li>
+                                            <p class="scope__title"> <span><i
+                                                        class="fa-regular fa-bookmark"></i></span>New energy materials
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="scope__title"> <span><i
+                                                        class="fa-regular fa-bookmark"></i></span>Energy storage
+                                                materials</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="scope__item" data-aos="fade-up" data-aos-duration="900">
+                            <div class="scope__inner">
+                                <div class="scope__body">
+                                    <h4>Lorem ipsum dolor sit.</h4>
+                                    <ul>
+                                        <li>
+                                            <p class="scope__title"> <span><i
+                                                        class="fa-regular fa-bookmark"></i>Additive manufacturing</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="scope__title"><span><i
+                                                        class="fa-regular fa-bookmark"></i></span>Biomaterials
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="scope__title"> <span><i
+                                                        class="fa-regular fa-bookmark"></i></span>Nanomaterials and
+                                                structures</p>
+                                        </li>
+                                        <li>
+                                            <p class="scope__title"> <span><i
+                                                        class="fa-regular fa-bookmark"></i></span>Advanced processing
+                                                and joining techniques</p>
+                                        </li>
+                                        <li>
+                                            <p class="scope__title"> <span><i
+                                                        class="fa-regular fa-bookmark"></i></span>Hydrogen production,
+                                                storage and applications</p>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -681,18 +667,136 @@
             </div>
         </div>
     </section>
+    <!-- ================> scope section end here <================== -->
 
-    <!-- ================> Pricing section end here <================== -->
+    <section class="about padding-top bg--white">
+        <div class="container">
+            <div class="about__wrapper">
+                <div class="row g-5 center-align">
+                    <div class="col-lg-6 publication-div">
+                        <h2 class="text-warning mb-1">Publishing Partner</h2>
+                        <!-- <p>(Approval is conditionally accepted)</p> -->
+                        <!-- <p class="mb-0 pb-0" >Publisher</p> -->
+                        <img src="./assets/images/logo/emerald.svg" class="m-2" width="225px" alt="">
+                        <img src="./assets/images/logo/scopus.png" class="m-2" width="225px" alt="">
+                        <img src="./assets/images/logo/tnf.png" class="m-2" width="225px" alt="">
+                        <img src="./assets/images/logo/sd.png" class="m-2" width="225px" alt="">
 
+                    </div>
+                    <div class="col-lg-6 px-5">
+                        <div class="about__content" data-aos="fade-up" data-aos-duration="2000">
+                            <h2 style="margin-top: 0;">Publication Partners and Journals</h2>
+                            <p style="text-align:justify">
+                                High-quality and original papers, selected based on reviewers' recommendations, will be
+                                published in
+                            <ul>
+                                <li>Nanomaterials and Energy</li>
+                                <li>Journal of Alloys and Metallurgical Systems (JALMES) <br> (Special Issue on High
+                                    Entropy Alloys)</li>
+                                <li>Transactions of the Indian Ceramic Society</li>
+                            </ul>
+                            </p>
+                            <a href="#" class="default-btn default-btn--secondary move-right"><span>Author Guidelines
+                                    <i class="fa-solid fa-pen-nib"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="bg--white">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-12">
 
+                    <h2 class="text-center padding-top">Important Dates</h2> <br>
+                    <table class="table table-borderless table-striped bs-table-bg-auto">
+                        <tbody>
+                            <thead>
+                                <tr>
+                                    <th style="width: 50%;">Events</th>
+                                    <th style="width: 50%;">Dates</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <th scope="row">Abstract Submission</th>
+                                <td>10-September-2024 to 30-September-2024</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Acceptance of Abstract</th>
+                                <td>01-October-2024</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Submission of Full Manuscript</th>
+                                <td>15-December-2024</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg--white">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <h2 class="text-center padding-top">Registration Fee</h2> <br>
+                    <table class="table table-borderless table-striped bs-table-bg-auto">
+                        <thead>
+                            <tr>
+                                <th scope="col">Category</th>
+                                <th scope="col">Registration Fee Early</th>
+                                <th scope="col">Registration Fee Last Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Research Scholars/Students</th>
+                                <td>INR 4000/-</td>
+                                <td>INR 4500/-</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Academicians (India)</th>
+                                <td>INR 6000/-</td>
+                                <td>INR 6500/-</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Academicians (Abroad)</th>
+                                <td>US $150</td>
+                                <td>US $175</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-center">
+
+                        <a href="#" class="default-btn move-right"><span>Click Here to Pay<svg
+                                    class="svg-inline--fa fa-arrow-right" aria-hidden="true" focusable="false"
+                                    data-prefix="fas" data-icon="arrow-right" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                        d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z">
+                                    </path>
+                                </svg>
+                                <!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com --></span></a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
     <!-- ================>Team section start here <================== -->
     <section class="team padding-top padding-bottom" id="team" style="background-image:url(assets/images/team/bg.png)">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up" data-aos-duration="900">
-                <p class="subtitle">Meet The Digitaries!</p>
-                <h2>Events Speakers</h2>
+                <p class="subtitle">Our Speakers</p>
+                <h2>Keynote Sessions</h2>
             </div>
             <div class="team__wrapper">
                 <div class="row g-4" style="justify-content: space-evenly;">
@@ -855,6 +959,272 @@
     </section>
     <!-- ================>Team section end here <================== -->
 
+    <section class="team padding-top padding-bottom bg--white" id="team" >
+        <div class="container">
+            <div class="section-header text-center mb-4">
+                <p class="subtitle">ICAMT 2024</p>
+                <h2>Organizing Team</h2>
+            </div>
+            <div class="team__wrapper">
+                <div class="row mb-4" style="justify-content: space-evenly;" data-aos="fade-up" data-aos-duration="900">
+                    <div class="col-lg-6 text-center">
+                        <h4>Chief Patron</h4>
+                        <p class="mb-0">Dr. Karunesh Kumar Shukla</p>
+                        <p>Director, MANIT Bhopal</p>
+                    </div>
+                </div>
+                <div class="row" style="justify-content: space-evenly;">
+                    <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="900">
+                        <h4>Patron</h4>
+                        <p class="mb-0">Dr. S.P.S. Rajput
+                        </p>
+                        <p>Professor, Mechanical Engineering <br> MANIT Bhopal</p>
+                    </div>
+                    <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="900">
+                        <h4>Chairman</h4>
+                        <p class="mb-0">Dr. Rajesh Gupta, H.O.D, ME</p>
+                        <p> Dr. C. M. Krishna, H.O.C, CEPDSM</p>
+                    </div>
+                    <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="900">
+                        <h4>Organizing Secretary</h4>
+                        <p class="mb-0">Dr. Sudhanshu Kumar, ME</p>
+                        <p class="mb-0">Dr. Vijay Bhaskar Semwal, CSE</p>
+                        <p class="mb-0">Dr. Deepak Kumar, ME</p>
+                        <p class="">Dr. N. Jayanth, CEPDSM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-header text-center mb-4 padding-top">
+                <h2>Advisory Committee</h2>
+            </div>
+            <div class="team__wrapper">
+                <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-duration="900">
+                    <h4 class="text-center">Members</h4>
+                    <div class="col-lg-3">
+                        <p class="mb-0">Dr. S.P.S. Rajput</p>
+                        <p class="mb-0">Dr. Rajesh Gupta, H.O.D, ME</p>
+                        <p> Dr. C. M. Krishna, H.O.C, CEPDSM</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="mb-0">Dr. Rajesh Gupta, H.O.D, ME</p>
+                        <p> Dr. C. M. Krishna, H.O.C, CEPDSM</p>
+                    </div>
+                </div>
+             
+            </div>
+            <div class="section-header text-center padding-top mb-4">
+                <h2>Technical Program Committee</h2>
+            </div>
+            <div class="team__wrapper">
+                <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-duration="900">
+                    <h4 class="text-center">Members</h4>
+                    <div class="col-lg-3">
+                        <p class="mb-0">Dr. S.P.S. Rajput</p>
+                        <p class="mb-0">Dr. Rajesh Gupta, H.O.D, ME</p>
+                        <p> Dr. C. M. Krishna, H.O.C, CEPDSM</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="mb-0">Dr. Rajesh Gupta, H.O.D, ME</p>
+                        <p> Dr. C. M. Krishna, H.O.C, CEPDSM</p>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================> CTA section start here <================== -->
+    <section class="cta bg--white">
+        <div class="container">
+            <div class="cta__wrapper" data-aos="flip-up" data-aos-duration="1000"
+                style="background-image:url(assets/images/cta/bg.png)">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="cta__content">
+                            <h2>Download Events Brochure as PDF</h2>
+                            <a href="#" class="default-btn default-btn--secondary move-bottom"><span>Download Now <i
+                                        class="fa-solid fa-arrow-down"></i></span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================> CTA section end here <================== -->
+
+
+
+    <section class="feature padding-top padding-bottom bg--white" id="feature">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up" data-aos-duration="900">
+                <p class="subtitle">Glimpses from past</p>
+                <h2>Our Gallery</h2>
+            </div>
+
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+                space-between="30" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                <swiper-slide><img
+                        src="https://randomwordgenerator.com/img/picture-generator/5fe7d2474f56b10ff3d8992cc12c30771037dbf85254794e732a7ddd9e48_640.jpg"
+                        alt=""></swiper-slide>
+                <swiper-slide><img
+                        src="https://randomwordgenerator.com/img/picture-generator/53e3d6414a57ab14f1dc8460962e33791c3ad6e04e507440762e7ad39f45c3_640.jpg"
+                        alt=""></swiper-slide>
+                <swiper-slide><img
+                        src="https://randompicturegenerator.com/img/picture-generator/54e4d5454e51a514f1dc8460962e33791c3ad6e04e5074417d2d73dc9149c4_640.jpg"
+                        alt=""></swiper-slide>
+            </swiper-container>
+        </div>
+    </section>
+    <!-- ================> gallery section end here <================== -->
+
+
+    <!-- ================> Event access section end here <================== -->
+
+
+
+    <!-- ================> Event schedule section start here <================== -->
+    <!-- <section class="schedule padding-top padding-bottom">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up" data-aos-duration="900">
+                <p class="subtitle">Monday 10AM - 06PM</p>
+                <h2>Events Schdule</h2>
+            </div>
+            <div class="schedule__wrapper">
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <div class="schedule__item" data-aos="fade-up-left" data-aos-duration="1000">
+                            <div class="schedule__item-inner">
+                                <div class="schedule__item-time">
+                                    <h6>10am - 12pm</h6>
+                                </div>
+                                <div class="schedule__item-content">
+                                    <h4>Consectetur Adipisicing elit Eiusmod</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perferendis
+                                        officiis quae eius delectus, aliquid deserunt, repudiandae consectetur corporis,
+                                        molestiae ipsam. Aut dolore iure excepturi!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-6">
+                        <div class="schedule__item schedule__item--right" data-aos="fade-up-right"
+                            data-aos-duration="1000">
+                            <div class="schedule__item-inner">
+                                <div class="schedule__item-time">
+                                    <h6>12pm - 2pm</h6>
+                                </div>
+                                <div class="schedule__item-content">
+                                    <h4>Consectetur Adipisicing elit Eiusmod</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perferendis
+                                        officiis quae eius delectus, aliquid deserunt, repudiandae consectetur corporis,
+                                        molestiae ipsam. Aut dolore iure excepturi!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="schedule__item" data-aos="fade-up-left" data-aos-duration="1000">
+                            <div class="schedule__item-inner">
+                                <div class="schedule__item-time">
+                                    <h6>2pm - 4pm</h6>
+                                </div>
+                                <div class="schedule__item-content">
+                                    <h4>Consectetur Adipisicing elit Eiusmod</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perferendis
+                                        officiis quae eius delectus, aliquid deserunt, repudiandae consectetur corporis,
+                                        molestiae ipsam. Aut dolore iure excepturi!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-6">
+                        <div class="schedule__item schedule__item--right" data-aos="fade-up-right"
+                            data-aos-duration="1000">
+                            <div class="schedule__item-inner">
+                                <div class="schedule__item-time">
+                                    <h6>4pm - 6pm</h6>
+                                </div>
+                                <div class="schedule__item-content">
+                                    <h4>Consectetur Adipisicing elit Eiusmod</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perferendis
+                                        officiis quae eius delectus, aliquid deserunt, repudiandae consectetur corporis,
+                                        molestiae ipsam. Aut dolore iure excepturi!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="#" class="default-btn default-btn--secondary move-right"><span>Book a Seat <i
+                                class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- ================> Event schedule section end here <================== -->
+
+
+
+
+
+
+
+
+
+
+    <section class="about padding-top padding-bottom">
+        <div class="container">
+            <div class="about__wrapper">
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <div class="about__content" data-aos="fade-up" data-aos-duration="2000">
+                            <p class="subtitle">THE CITY OF LAKES</p>
+                            <h2>About Bhopal</h2>
+                            <p style="text-align:justify">
+                                Bhopal is the capital city of the Indian state of Madhya Pradesh. Bhopal is considered
+                                as one of the important financial and economic destinations in Madhya Pradesh's strong
+                                wealth pillars.
+                                Bhopal houses various educational and research institutions and installations of
+                                national importance, including <b> ISRO's Master Control Facility, BHEL and AMPRI</b>.
+                                Bhopal is home to a large number of institutes of National Importance in India, namely,
+                                <b> IISER, MANIT, SPA, AIIMS, NLIU, IIFM, NIFT, NIDMP and IIIT</b>.
+                                Bhopal city also has <b> Regional Science Centre, Bhopal</b>, one of the constituent
+                                units of the <b></b>National Council of Science Museums (NCSM)</b>.
+                                <br><br>
+                                It's one of India’s greenest cities. There are two main lakes, the Upper Lake and the
+                                Lower Lake. On the banks of the Upper Lake is Van Vihar National Park, home to tigers,
+                                lions and leopards. The State Museum has fossils, paintings and rare Jain sculptures.
+                                Taj-ul-Masjid is one of Asia’s largest mosques, with white domes, minarets and a huge
+                                courtyard.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 px-5">
+                        <div class="about__content" data-aos="fade-up" data-aos-duration="2000">
+                            <swiper-container style="height:auto;" class="mySwiper" effect="fade" space-between="30"
+                                autoplay-delay="2700">
+                                <swiper-slide role="group" aria-label="1 / 3" class="swiper-slide-active"
+                                    style="background:transparent; width: 416px; margin-right: 30px;"><img
+                                        src="https://randomwordgenerator.com/img/picture-generator/5fe7d2474f56b10ff3d8992cc12c30771037dbf85254794e732a7ddd9e48_640.jpg"
+                                        alt=""></swiper-slide>
+                                <swiper-slide role="group" aria-label="2 / 3" class="swiper-slide-next"
+                                    style="background:transparent;width: 416px; margin-right: 30px;"><img
+                                        src="https://randomwordgenerator.com/img/picture-generator/53e3d6414a57ab14f1dc8460962e33791c3ad6e04e507440762e7ad39f45c3_640.jpg"
+                                        alt=""></swiper-slide>
+                                <swiper-slide role="group" aria-label="3 / 3"
+                                    style="background:transparent;width: 416px; margin-right: 30px;" class=""><img
+                                        src="https://randompicturegenerator.com/img/picture-generator/54e4d5454e51a514f1dc8460962e33791c3ad6e04e5074417d2d73dc9149c4_640.jpg"
+                                        alt=""></swiper-slide>
+                            </swiper-container>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="blog padding-top padding-bottom bg--white">
         <div class="container">
@@ -970,7 +1340,7 @@
         </div>
     </section>
 
-    <section class="blog padding-top padding-bottom bg--white">
+    <section class="blog padding-bottom bg--white">
         <div class="container">
 
             <div class="section-header text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
@@ -1156,38 +1526,38 @@
     </section>
     <!-- ================>Sponsor section end here <================== -->
 
-    <section class="pricing padding-top padding-bottom">
+    <section class="scope padding-top padding-bottom">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up" data-aos-duration="900">
                 <p class="subtitle">Get Brand Visibility</p>
                 <h2>Sponsorship Segments</h2>
             </div>
-            <div class="pricing__wrapper">
+            <div class="scope__wrapper">
                 <div class="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1">
                     <div class="col">
-                        <div class="pricing__item" data-aos="fade-up" data-aos-duration="900">
-                            <div class="pricing__inner">
-                                <div class="pricing__head sponsortag">
+                        <div class="scope__item" data-aos="fade-up" data-aos-duration="900">
+                            <div class="scope__inner">
+                                <div class="scope__head sponsortag">
                                     <h4>₹40000</h4>
                                 </div>
-                                <div class="pricing__body">
+                                <div class="scope__body">
                                     <h4>Diamond Sponsor</h4>
                                     <ul>
                                         <li>
-                                            <p class="pricing__title"> <span><i
-                                                        class="fa-solid fa-circle-check"></i></span> Deliverable 1</p>
+                                            <p class="scope__title"> <span><i class="fa-solid fa-bookmark"></i></span>
+                                                Deliverable 1</p>
                                         </li>
                                         <li>
-                                            <p class="pricing__title"><span><i
+                                            <p class="scope__title"><span><i
                                                         class="fa-solid fa-circle-xmark"></i></span> Deliverable 2</p>
                                         </li>
                                         <li>
-                                            <p class="pricing__title"> <span><i
+                                            <p class="scope__title"> <span><i
                                                         class="fa-solid fa-circle-xmark"></i></span> Deliverable 3</p>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="pricing__footer">
+                                <div class="scope__footer">
                                     <a href="login.html" class="default-btn move-top"><span>Select Plan</span></a>
                                 </div>
                             </div>
@@ -1195,29 +1565,29 @@
                     </div>
 
                     <div class="col">
-                        <div class="pricing__item" data-aos="fade-up" data-aos-duration="900">
-                            <div class="pricing__inner">
-                                <div class="pricing__head sponsortag">
+                        <div class="scope__item" data-aos="fade-up" data-aos-duration="900">
+                            <div class="scope__inner">
+                                <div class="scope__head sponsortag">
                                     <h4>₹25000</h4>
                                 </div>
-                                <div class="pricing__body">
+                                <div class="scope__body">
                                     <h4>Gold Sponsor</h4>
                                     <ul>
                                         <li>
-                                            <p class="pricing__title"> <span><i
-                                                        class="fa-solid fa-circle-check"></i></span> Deliverable 1</p>
+                                            <p class="scope__title"> <span><i class="fa-solid fa-bookmark"></i></span>
+                                                Deliverable 1</p>
                                         </li>
                                         <li>
-                                            <p class="pricing__title"><span><i
-                                                        class="fa-solid fa-circle-check"></i></span> Deliverable 2</p>
+                                            <p class="scope__title"><span><i class="fa-solid fa-bookmark"></i></span>
+                                                Deliverable 2</p>
                                         </li>
                                         <li>
-                                            <p class="pricing__title"> <span><i
+                                            <p class="scope__title"> <span><i
                                                         class="fa-solid fa-circle-xmark"></i></span> Deliverable 3</p>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="pricing__footer">
+                                <div class="scope__footer">
                                     <a href="login.html" class="default-btn move-top"><span>Select Plan</span></a>
                                 </div>
                             </div>
@@ -1225,29 +1595,29 @@
                     </div>
 
                     <div class="col">
-                        <div class="pricing__item" data-aos="fade-up" data-aos-duration="900">
-                            <div class="pricing__inner">
-                                <div class="pricing__head sponsortag">
+                        <div class="scope__item" data-aos="fade-up" data-aos-duration="900">
+                            <div class="scope__inner">
+                                <div class="scope__head sponsortag">
                                     <h4>₹15000</h4>
                                 </div>
-                                <div class="pricing__body">
+                                <div class="scope__body">
                                     <h4>Silver Sponsor</h4>
                                     <ul>
                                         <li>
-                                            <p class="pricing__title"> <span><i
-                                                        class="fa-solid fa-circle-check"></i></span> Deliverable 1</p>
+                                            <p class="scope__title"> <span><i class="fa-solid fa-bookmark"></i></span>
+                                                Deliverable 1</p>
                                         </li>
                                         <li>
-                                            <p class="pricing__title"><span><i
-                                                        class="fa-solid fa-circle-check"></i></span> Deliverable 2</p>
+                                            <p class="scope__title"><span><i class="fa-solid fa-bookmark"></i></span>
+                                                Deliverable 2</p>
                                         </li>
                                         <li>
-                                            <p class="pricing__title"> <span><i
+                                            <p class="scope__title"> <span><i
                                                         class="fa-solid fa-circle-xmark"></i></span> Deliverable 3</p>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="pricing__footer">
+                                <div class="scope__footer">
                                     <a href="login.html" class="default-btn move-top"><span>Select Plan</span></a>
                                 </div>
                             </div>
@@ -1255,29 +1625,29 @@
                     </div>
 
                     <div class="col">
-                        <div class="pricing__item" data-aos="fade-up" data-aos-duration="900">
-                            <div class="pricing__inner">
-                                <div class="pricing__head sponsortag">
+                        <div class="scope__item" data-aos="fade-up" data-aos-duration="900">
+                            <div class="scope__inner">
+                                <div class="scope__head sponsortag">
                                     <h4>₹10000</h4>
                                 </div>
-                                <div class="pricing__body">
+                                <div class="scope__body">
                                     <h4>Bronze Sponsor</h4>
                                     <ul>
                                         <li>
-                                            <p class="pricing__title"> <span><i
-                                                        class="fa-solid fa-circle-check"></i></span> Deliverable 1</p>
+                                            <p class="scope__title"> <span><i class="fa-solid fa-bookmark"></i></span>
+                                                Deliverable 1</p>
                                         </li>
                                         <li>
-                                            <p class="pricing__title"><span><i
-                                                        class="fa-solid fa-circle-check"></i></span> Deliverable 2</p>
+                                            <p class="scope__title"><span><i class="fa-solid fa-bookmark"></i></span>
+                                                Deliverable 2</p>
                                         </li>
                                         <li>
-                                            <p class="pricing__title"> <span><i
+                                            <p class="scope__title"> <span><i
                                                         class="fa-solid fa-circle-xmark"></i></span> Deliverable 3</p>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="pricing__footer">
+                                <div class="scope__footer">
                                     <a href="login.html" class="default-btn move-top"><span>Select Plan</span></a>
                                 </div>
                             </div>
@@ -1629,39 +1999,84 @@
 
 
     <!-- ================> Footer section start here <================== -->
-    <footer class="footer" style="background-image:url(assets/images/footer/bg.png) ;">
-        <div class="footer__wrapper padding-top padding-bottom">
+    <footer id="footer">
+
+        <div class="footer-top bg--white padding-top">
+
             <div class="container">
-                <div class="footer__content text-center">
-                    <a class="mb-4 d-inline-block" href="index.html"><img src="assets/images/logo/logo.png" alt="Logo">
-                    </a>
-                    <ul class="social justify-content-center">
-                        <li class="social__item">
-                            <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link"><i class="fab fa-youtube"></i></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                    </ul>
+                <div class="row g-5 justify-content-evenly">
+                    <div class="col-lg-3 col-md-3 text-center">
+                        <img class="mx-4" src="/assets/images/logo/logo.png" class="margin-left-logo" width="80">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/4/4f/Maulana_Azad_National_Institute_of_Technology_Logo.png"
+                            width="80">
+
+                     
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 ">
+                        <h4>Useful Links</h4>
+                        <hr>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="https://www.manit.ac.in"
+                                    target="_blank">MANIT Website</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 ">
+                        <h4>Contact Persons</h4>
+                        <hr>
+                        <p><strong><a href="https://www.manit.ac.in/content/dr-professor-name" target="_blank"
+                                    class="text-black">Dr. Professor Name</a></strong>
+                            <br> <a href="tel:+911234567890" class="text-black">+91-1234567890</a><br>
+                            <a href="mailto:email@manit.ac.in" class="text-black">email@manit.ac.in</a>
+                        </p>
+
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 footer-contact">
+                        <h4>Contact Address</h4>
+                        <hr>
+                        <p class=" text-center">
+                            <span class="subtitle">TEAM ICAMT 2024 </span>
+                            <br>
+                            Department of Materials and Metallurgical Engineering<br>
+                            MANIT Bhopal <br><br>
+                            Near Mata Mandir Square<br>
+                            Madhya Pradesh, India, 462003 <br>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer__copyright">
-            <div class="container">
-                <div class="text-center py-4">
-                    <p class=" mb-0">© 2023 | All Rights Reserved </p>
-                </div>
+
+            <div class="container py-4">
+                <ul class="social mb-4">
+                    <li class="social__item">
+                        <a href="#" class="social__link"><svg class="svg-inline--fa fa-twitter" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path></svg><!-- <i class="fab fa-twitter"></i> Font Awesome fontawesome.com --></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link"><svg class="svg-inline--fa fa-youtube" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg><!-- <i class="fab fa-youtube"></i> Font Awesome fontawesome.com --></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link"><svg class="svg-inline--fa fa-instagram" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i class="fab fa-instagram"></i> Font Awesome fontawesome.com --></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link"><svg class="svg-inline--fa fa-linkedin-in" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.6 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path></svg><!-- <i class="fab fa-linkedin-in"></i> Font Awesome fontawesome.com --></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link"><svg class="svg-inline--fa fa-facebook-f" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path></svg><!-- <i class="fab fa-facebook-f"></i> Font Awesome fontawesome.com --></a>
+                    </li>
+                </ul>
+                <div id="sfcm5qfbpar6zjs8qz7tl12qu5ur4j8bdmz"></div>
+                <script type="text/javascript"
+                    src="https://counter9.stat.ovh/private/counter.js?c=m5qfbpar6zjs8qz7tl12qu5ur4j8bdmz&down=async"
+                    async></script>
+                <noscript><a href="https://www.freecounterstat.com" title="page counter"><img
+                            src="https://counter9.stat.ovh/private/freecounterstat.php?c=m5qfbpar6zjs8qz7tl12qu5ur4j8bdmz"
+                            border="0" title="page counter" alt="page counter"></a></noscript>
+
+
             </div>
-        </div>
     </footer>
     <!-- ================> Footer section end here <================== -->
 
