@@ -4216,3 +4216,7 @@ Tags:event, meetup, conference landing page, event offer, event landing page, ev
     color: blue !important;
     cursor: pointer !important;
  }
+
+ .header-section.header-fixed .header-bottom .header-wrapper .header-wrapper .menu>li>a {
+	color: #19183e !important;
+}
