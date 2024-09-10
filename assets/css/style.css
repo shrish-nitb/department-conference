@@ -1477,8 +1477,8 @@ Tags:event, meetup, conference landing page, event offer, event landing page, ev
  
  @media (min-width: 992px) {
    .menu {
-     margin-right: 30px;
-     gap: 10px;
+     /* margin-right: 30px; */
+     gap: 8px;
    }
  }
  
