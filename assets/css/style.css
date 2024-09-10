@@ -2377,8 +2377,8 @@ Tags:event, meetup, conference landing page, event offer, event landing page, ev
  
  .blog__content {
    padding-inline: 30px;
-   padding-block-end: 20px;
-   padding-block-start: 15px;
+   /* padding-block-end: 20px;
+   padding-block-start: 15px; */
  }
  
  .blog__content-top h4:hover a {
