@@ -4263,3 +4263,15 @@ Tags:event, meetup, conference landing page, event offer, event landing page, ev
  .whitebg>li>a {
   color: #19183e;
 }
+#menudiv.mainpage {
+  color:white !important;
+}
+.header-bar.mainpage span {
+  background: white !important;
+}
+.header-section.header-fixed .header-bottom .header-wrapper .header-wrapper #menudiv.mainpage {
+  color: #19183e !important;
+}
+.header-section.header-fixed .header-bottom .header-wrapper .header-wrapper .header-bar.mainpage span {
+  background: #19183e !important;
+}
