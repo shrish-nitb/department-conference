@@ -4312,3 +4312,9 @@ Tags:event, meetup, conference landing page, event offer, event landing page, ev
   font-size: 1.1rem;
   color: #19183e;
  }
+
+ .organizer p.name{
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 2rem;
+ }
