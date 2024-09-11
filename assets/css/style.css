@@ -4259,3 +4259,7 @@ Tags:event, meetup, conference landing page, event offer, event landing page, ev
      text-align: center !important;
    }
  }
+
+ .whitebg>li>a {
+  color: #19183e;
+}
