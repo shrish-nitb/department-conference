@@ -1234,9 +1234,6 @@ Tags:event, meetup, conference landing page, event offer, event landing page, ev
  .comments .comment-list .comment .com-content .com-title .com-title-meta span,
  .subtitle {
    margin-bottom: 5px;
-   font-weight: bold;
-   font-size: 1.1rem;
-   color: #0aa622;
  }
  
  .widget.widget-project .widget-project__list-item p,
@@ -4307,4 +4304,11 @@ Tags:event, meetup, conference landing page, event offer, event landing page, ev
      text-shadow:
        0 0 2px #0d6efd;
    }
+ }
+
+ .scope__title{
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #0aa622;
  }
