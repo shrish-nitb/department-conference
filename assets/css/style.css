@@ -3891,6 +3891,11 @@ Tags:event, meetup, conference landing page, event offer, event landing page, ev
    color: #0aa622;
    margin-right: 10px;
  }
+
+ .scope__body ul li span .fa-square-check {
+  color: #0aa622;
+  margin-right: 10px;
+}
  
  .scope__body ul li span .fa-circle-xmark {
    color: #f53b57;
