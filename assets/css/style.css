@@ -4318,14 +4318,14 @@ Tags:event, meetup, conference landing page, event offer, event landing page, ev
   font-size: 1.2rem;
   line-height: 2rem;
  }
- .team__wrapper.small{
+ .team__wrapper.small__order{
   display: none;
 }
- @media only screen and (max-width: 900px) {
-  .team__wrapper.small{
+ @media only screen and (max-width: 1000px) {
+  .team__wrapper.small__order{
     display: block;
   }
-  .team__wrapper.large{
-    display: none;
+  .team__wrapper.large__order{
+    display: none !important;
   }
 }
