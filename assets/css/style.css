@@ -4329,3 +4329,10 @@ Tags:event, meetup, conference landing page, event offer, event landing page, ev
     display: none !important;
   }
 }
+
+.orgimg{
+  width: 121px;
+  height: 160px;
+  border-radius: 5px;
+  object-fit: cover;
+}
