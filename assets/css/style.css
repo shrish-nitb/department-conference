@@ -4306,6 +4306,24 @@ Tags:event, meetup, conference landing page, event offer, event landing page, ev
    }
  }
 
+
+ .glowing-text2 {
+  animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker2 {
+  0% {
+      text-shadow:
+          0 0 3px orange; /* Dark red */
+  }
+
+  100% {
+      text-shadow:
+          0 0 5px lightcoral; /* Bright orange */
+  }
+}
+
+
  .scope__title{
   margin-bottom: 5px;
   font-weight: bold;
