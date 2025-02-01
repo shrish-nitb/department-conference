@@ -2217,6 +2217,14 @@ Tags:event, meetup, conference landing page, event offer, event landing page, ev
    font-weight: 600;
    border-radius: 0.4rem;
  }
+
+@keyframes blink {
+0%, 100% {background-color:#0d6efd;}
+50% {background-color: #4FBF26;}
+}
+.blinking-button {
+animation: blink 2s linear infinite;
+}
  
  @media (min-width: 768px) {
    .default-btn {
